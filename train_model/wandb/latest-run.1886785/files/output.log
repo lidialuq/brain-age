@@ -1,0 +1,12 @@
+Number of subjects: 40055
+Number of subjects after checking: 39373
+Number of subjects: 40055
+Number of subjects after checking: 39373
+Traceback (most recent call last):
+  File "main_train_1.py", line 51, in <module>
+    trainer.train(epochs=config["epochs"])
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/trainer.py", line 80, in train
+    train_loss, train_delta = self.train_one_epoch()
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/trainer.py", line 37, in train_one_epoch
+    for image, label in tqdm(self.train_loader):
+TypeError: 'module' object is not callable

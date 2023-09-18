@@ -1,0 +1,38 @@
+
+/mnt/HDD18TB/lidfer/ukb_preprocessed/bids/sub-5342363/ses-2/T1_unbiased_brain_uint8.nii.gz
+Traceback (most recent call last):
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/monai/transforms/transform.py", line 90, in apply_transform
+    return _apply_transform(transform, data, unpack_items)
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/monai/transforms/transform.py", line 54, in _apply_transform
+    return transform(parameters)
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/monai/transforms/spatial/array.py", line 1311, in __call__
+    out = Rotate90(self._rand_k, self.spatial_axes)(img)
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/monai/transforms/spatial/array.py", line 1235, in __call__
+    out: NdarrayOrTensor = torch.rot90(img, self.k, axes)
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/monai/data/meta_tensor.py", line 245, in __torch_function__
+    ret = super().__torch_function__(func, types, args, kwargs)
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/_tensor.py", line 1051, in __torch_function__
+    ret = func(*args, **kwargs)
+RuntimeError: Rotation dim1 out of range, dim1 = 3
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "main_train_1.py", line 51, in <module>
+    trainer.train(epochs=config["epochs"])
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/trainer.py", line 80, in train
+    train_loss, train_delta = self.train_one_epoch()
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/trainer.py", line 34, in train_one_epoch
+    for dic in self.train_loader:
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 561, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/dataset.py", line 68, in __getitem__
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/monai/transforms/compose.py", line 173, in __call__
+    input_ = apply_transform(_transform, input_, self.map_items, self.unpack_items, self.log_stats)
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/monai/transforms/transform.py", line 114, in apply_transform
+    raise RuntimeError(f"applying transform {transform}") from e
+RuntimeError: applying transform <monai.transforms.spatial.array.RandRotate90 object at 0x7f8b0d912250>

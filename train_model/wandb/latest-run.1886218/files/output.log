@@ -1,0 +1,22 @@
+Number of subjects: 40055
+Number of subjects after checking: 39373
+Number of subjects: 40055
+Number of subjects after checking: 39373
+selecting new mask
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+tensor([ 1.0575,  1.1183, -1.7459,  0.3871], dtype=torch.float64)
+Traceback (most recent call last):
+  File "main_train_1.py", line 51, in <module>
+    trainer.train(epochs=config["epochs"])
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/trainer.py", line 82, in train
+    train_loss, train_delta = self.train_one_epoch()
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/trainer.py", line 40, in train_one_epoch
+    with torch.cuda.amp.autocast(device=self.device, dtype=torch.float16):
+TypeError: __init__() got an unexpected keyword argument 'device'

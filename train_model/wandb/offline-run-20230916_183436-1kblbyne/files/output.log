@@ -1,0 +1,37 @@
+Traceback (most recent call last):
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/monai/transforms/transform.py", line 90, in apply_transform
+    return _apply_transform(transform, data, unpack_items)
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/monai/transforms/transform.py", line 54, in _apply_transform
+    return transform(parameters)
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/monai/transforms/croppad/array.py", line 160, in __call__
+    to_pad_ = self.compute_pad_width(img.shape[1:])
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/monai/transforms/croppad/array.py", line 259, in compute_pad_width
+    spatial_size = fall_back_tuple(self.spatial_size, spatial_shape)
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/monai/utils/misc.py", line 197, in fall_back_tuple
+    user = ensure_tuple_rep(user_provided, ndim)
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/monai/utils/misc.py", line 154, in ensure_tuple_rep
+    raise ValueError(f"Sequence must have length {dim}, got {len(tup)}.")
+ValueError: Sequence must have length 2, got 3.
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "main_train_1.py", line 51, in <module>
+    trainer.train(epochs=config["epochs"])
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/trainer.py", line 80, in train
+    train_loss, train_delta = self.train_one_epoch()
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/trainer.py", line 34, in train_one_epoch
+    for dic in self.train_loader:
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 561, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/dataset.py", line 68, in __getitem__
+    image = self.shape_transform(image)
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/monai/transforms/compose.py", line 173, in __call__
+    input_ = apply_transform(_transform, input_, self.map_items, self.unpack_items, self.log_stats)
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/monai/transforms/transform.py", line 114, in apply_transform
+    raise RuntimeError(f"applying transform {transform}") from e
+RuntimeError: applying transform <monai.transforms.croppad.array.SpatialPad object at 0x7f504adb51f0>

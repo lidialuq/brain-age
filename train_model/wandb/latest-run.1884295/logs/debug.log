@@ -1,0 +1,33 @@
+2023-09-16 17:16:32,664 INFO    MainThread:1884295 [wandb_setup.py:_flush():76] Loading settings from /home/lidfer/.config/wandb/settings
+2023-09-16 17:16:32,665 INFO    MainThread:1884295 [wandb_setup.py:_flush():76] Loading settings from /mnt/CRAI-NAS/all/lidfer/brain-age/train_model/wandb/settings
+2023-09-16 17:16:32,665 INFO    MainThread:1884295 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-09-16 17:16:32,665 INFO    MainThread:1884295 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train_model/main_train_1.py', 'program': 'main_train_1.py'}
+2023-09-16 17:16:32,665 INFO    MainThread:1884295 [wandb_init.py:_log_setup():428] Logging user logs to /mnt/CRAI-NAS/all/lidfer/brain-age/train_model/wandb/offline-run-20230916_171632-3i9r74rg/logs/debug.log
+2023-09-16 17:16:32,666 INFO    MainThread:1884295 [wandb_init.py:_log_setup():429] Logging internal logs to /mnt/CRAI-NAS/all/lidfer/brain-age/train_model/wandb/offline-run-20230916_171632-3i9r74rg/logs/debug-internal.log
+2023-09-16 17:16:32,666 INFO    MainThread:1884295 [wandb_init.py:init():462] calling init triggers
+2023-09-16 17:16:32,666 INFO    MainThread:1884295 [wandb_init.py:init():465] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.001, 'weight_decay': 0.0005, 'momentum': 0.9, 'batch_size': 4, 'epochs': 100, 'architecture': 'sfcn', 'model_depth': 5}
+2023-09-16 17:16:32,667 INFO    MainThread:1884295 [wandb_init.py:init():515] starting backend
+2023-09-16 17:16:32,667 INFO    MainThread:1884295 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-09-16 17:16:32,685 INFO    MainThread:1884295 [backend.py:ensure_launched():217] starting backend process...
+2023-09-16 17:16:32,696 INFO    MainThread:1884295 [backend.py:ensure_launched():222] started backend process with pid: 1884302
+2023-09-16 17:16:32,698 INFO    MainThread:1884295 [wandb_init.py:init():525] backend started and connected
+2023-09-16 17:16:32,705 INFO    MainThread:1884295 [wandb_init.py:init():596] updated telemetry
+2023-09-16 17:16:32,763 INFO    MainThread:1884295 [wandb_init.py:init():662] starting run threads in backend
+2023-09-16 17:16:35,539 INFO    MainThread:1884295 [wandb_run.py:_console_start():1898] atexit reg
+2023-09-16 17:16:35,543 INFO    MainThread:1884295 [wandb_run.py:_redirect():1771] redirect: SettingsConsole.REDIRECT
+2023-09-16 17:16:35,543 INFO    MainThread:1884295 [wandb_run.py:_redirect():1776] Redirecting console.
+2023-09-16 17:16:35,545 INFO    MainThread:1884295 [wandb_run.py:_redirect():1832] Redirects installed.
+2023-09-16 17:16:35,545 INFO    MainThread:1884295 [wandb_init.py:init():688] run started, returning control to user process
+2023-09-16 17:16:39,172 INFO    MainThread:1884295 [wandb_watch.py:watch():47] Watching
+2023-09-16 17:16:39,575 INFO    MainThread:1884295 [wandb_run.py:_atexit_cleanup():1867] got exitcode: 1
+2023-09-16 17:16:39,576 INFO    MainThread:1884295 [wandb_run.py:_restore():1839] restore
+2023-09-16 17:16:42,088 INFO    MainThread:1884295 [wandb_run.py:_on_finish():1996] got exit ret: 
+2023-09-16 17:16:42,190 INFO    MainThread:1884295 [wandb_run.py:_on_finish():1996] got exit ret: done: true
+exit_result {
+}
+local_info {
+}
+
+2023-09-16 17:16:43,294 INFO    MainThread:1884295 [wandb_run.py:_footer_history_summary_info():3104] rendering history
+2023-09-16 17:16:43,294 INFO    MainThread:1884295 [wandb_run.py:_footer_history_summary_info():3136] rendering summary

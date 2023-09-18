@@ -1,0 +1,25 @@
+image shape: (1, 188, 246, 239)
+0
+mask shape inside if: (240, 240, 155)
+Traceback (most recent call last):
+  File "main_train_1.py", line 51, in <module>
+    trainer.train(epochs=config["epochs"])
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/trainer.py", line 80, in train
+    train_loss, train_delta = self.train_one_epoch()
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/trainer.py", line 34, in train_one_epoch
+    for dic in self.train_loader:
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 561, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/dataset.py", line 70, in __getitem__
+    image = self._overlay_mask(image)
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/dataset.py", line 50, in _overlay_mask
+    self.mask = adjust_mask_size(mask, image)
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/apply_mask.py", line 20, in adjust_mask_size
+    diff = np.array(data_shape) - np.array(mask_shape)
+ValueError: operands could not be broadcast together with shapes (4,) (3,)

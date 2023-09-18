@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "main_train_1.py", line 32, in <module>
+    train_dataset = UKB(data_path, masks_path, mode='train',
+TypeError: __init__() got an unexpected keyword argument 'mode'

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "main_train_1.py", line 32, in <module>
+    train_dataset = UKB(data_path, masks_path, train=True, val_split=0.2,
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/dataset.py", line 13, in __init__
+    self.transform = transform
+NameError: name 'transform' is not defined

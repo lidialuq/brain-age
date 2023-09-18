@@ -1,0 +1,99 @@
+Number of subjects: 40055
+Number of subjects after checking: 39373
+Number of subjects: 40055
+Number of subjects after checking: 39373
+tensor([[62.8125],
+        [62.8125],
+        [62.7188],
+        [62.7188],
+        [62.8125],
+        [62.7500],
+        [62.8438],
+        [62.6875],
+        [62.6875],
+        [62.8125],
+        [62.7500],
+        [62.8125]], device='cuda:0', dtype=torch.float16,
+       grad_fn=<AliasBackward0>)
+Metadata
+	affine: tensor([[1., 0., 0., 0.],
+        [0., 1., 0., 0.],
+        [0., 0., 1., 0.],
+        [0., 0., 0., 1.]], dtype=torch.float64)
+Applied operations
+[]
+Is batch?: False
+tensor([[-526.0000],
+        [-507.0000],
+        [-523.0000],
+        [-517.5000],
+        [-518.5000],
+        [-514.5000],
+        [-511.5000],
+        [-529.5000],
+        [-526.0000],
+        [-510.5000],
+        [-527.5000],
+        [-517.5000]], device='cuda:0', dtype=torch.float16,
+       grad_fn=<AliasBackward0>)
+Metadata
+	affine: tensor([[1., 0., 0., 0.],
+        [0., 1., 0., 0.],
+        [0., 0., 1., 0.],
+        [0., 0., 0., 1.]], dtype=torch.float64)
+Applied operations
+[]
+Is batch?: False
+tensor([[nan],
+        [nan],
+        [nan],
+        [nan],
+        [nan],
+        [nan],
+        [nan],
+        [nan],
+        [nan],
+        [nan],
+        [nan],
+        [nan]], device='cuda:0', dtype=torch.float16, grad_fn=<AliasBackward0>)
+Metadata
+	affine: tensor([[1., 0., 0., 0.],
+        [0., 1., 0., 0.],
+        [0., 0., 1., 0.],
+        [0., 0., 0., 1.]], dtype=torch.float64)
+Applied operations
+[]
+Is batch?: False
+tensor([[nan],
+        [nan],
+        [nan],
+        [nan],
+        [nan],
+        [nan],
+        [nan],
+        [nan],
+        [nan],
+        [nan],
+        [nan],
+        [nan]], device='cuda:0', dtype=torch.float16, grad_fn=<AliasBackward0>)
+Metadata
+	affine: tensor([[1., 0., 0., 0.],
+        [0., 1., 0., 0.],
+        [0., 0., 1., 0.],
+        [0., 0., 0., 1.]], dtype=torch.float64)
+Applied operations
+[]
+Is batch?: False
+ 44%|████████████████████████████████████████████████████████                                                                      | 4/9 [00:32<00:40,  8.07s/it]
+Traceback (most recent call last):
+  File "main_train_1.py", line 56, in <module>
+    trainer.train(epochs=config["epochs"])
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/trainer.py", line 81, in train
+    train_loss, train_delta = self.train_one_epoch()
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/trainer.py", line 46, in train_one_epoch
+    total_loss += loss.item()
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/monai/data/meta_tensor.py", line 245, in __torch_function__
+    ret = super().__torch_function__(func, types, args, kwargs)
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/_tensor.py", line 1051, in __torch_function__
+    ret = func(*args, **kwargs)
+KeyboardInterrupt

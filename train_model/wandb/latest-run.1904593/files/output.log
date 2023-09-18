@@ -1,0 +1,221 @@
+Number of subjects: 40055
+Number of subjects after checking: 39373
+Number of subjects: 40055
+Number of subjects after checking: 39373
+tensor([[  1.0825,   0.9025,  10.1425,   1.0025,  -6.8275, -14.2675,  10.4525,
+           4.7925,  -6.9075,   4.1825, -10.6475,  16.2925],
+        [  1.0825,   0.9025,  10.1425,   1.0025,  -6.8275, -14.2675,  10.4525,
+           4.7925,  -6.9075,   4.1825, -10.6475,  16.2925],
+        [  1.0825,   0.9025,  10.1425,   1.0025,  -6.8275, -14.2675,  10.4525,
+           4.7925,  -6.9075,   4.1825, -10.6475,  16.2925],
+        [  1.0200,   0.8400,  10.0800,   0.9400,  -6.8900, -14.3300,  10.3900,
+           4.7300,  -6.9700,   4.1200, -10.7100,  16.2300],
+        [  1.0200,   0.8400,  10.0800,   0.9400,  -6.8900, -14.3300,  10.3900,
+           4.7300,  -6.9700,   4.1200, -10.7100,  16.2300],
+        [  1.0825,   0.9025,  10.1425,   1.0025,  -6.8275, -14.2675,  10.4525,
+           4.7925,  -6.9075,   4.1825, -10.6475,  16.2925],
+        [  1.0200,   0.8400,  10.0800,   0.9400,  -6.8900, -14.3300,  10.3900,
+           4.7300,  -6.9700,   4.1200, -10.7100,  16.2300],
+        [  1.0825,   0.9025,  10.1425,   1.0025,  -6.8275, -14.2675,  10.4525,
+           4.7925,  -6.9075,   4.1825, -10.6475,  16.2925],
+        [  1.0200,   0.8400,  10.0800,   0.9400,  -6.8900, -14.3300,  10.3900,
+           4.7300,  -6.9700,   4.1200, -10.7100,  16.2300],
+        [  1.0825,   0.9025,  10.1425,   1.0025,  -6.8275, -14.2675,  10.4525,
+           4.7925,  -6.9075,   4.1825, -10.6475,  16.2925],
+        [  1.0200,   0.8400,  10.0800,   0.9400,  -6.8900, -14.3300,  10.3900,
+           4.7300,  -6.9700,   4.1200, -10.7100,  16.2300],
+        [  1.0825,   0.9025,  10.1425,   1.0025,  -6.8275, -14.2675,  10.4525,
+           4.7925,  -6.9075,   4.1825, -10.6475,  16.2925]], device='cuda:0',
+       grad_fn=<AliasBackward0>)
+Metadata
+	affine: tensor([[1., 0., 0., 0.],
+        [0., 1., 0., 0.],
+        [0., 0., 1., 0.],
+        [0., 0., 0., 1.]], dtype=torch.float64)
+Applied operations
+[]
+Is batch?: False
+tensor([[-607.5800, -612.6100, -609.9600, -616.5800, -614.8000, -610.7600,
+         -614.6900, -613.7800, -602.0500, -597.5700, -618.0200, -620.7300],
+        [-604.5800, -609.6100, -606.9600, -613.5800, -611.8000, -607.7600,
+         -611.6900, -610.7800, -599.0500, -594.5700, -615.0200, -617.7300],
+        [-606.5800, -611.6100, -608.9600, -615.5800, -613.8000, -609.7600,
+         -613.6900, -612.7800, -601.0500, -596.5700, -617.0200, -619.7300],
+        [-604.5800, -609.6100, -606.9600, -613.5800, -611.8000, -607.7600,
+         -611.6900, -610.7800, -599.0500, -594.5700, -615.0200, -617.7300],
+        [-608.0800, -613.1100, -610.4600, -617.0800, -615.3000, -611.2600,
+         -615.1900, -614.2800, -602.5500, -598.0700, -618.5200, -621.2300],
+        [-612.5800, -617.6100, -614.9600, -621.5800, -619.8000, -615.7600,
+         -619.6900, -618.7800, -607.0500, -602.5700, -623.0200, -625.7300],
+        [-591.5800, -596.6100, -593.9600, -600.5800, -598.8000, -594.7600,
+         -598.6900, -597.7800, -586.0500, -581.5700, -602.0200, -604.7300],
+        [-611.5800, -616.6100, -613.9600, -620.5800, -618.8000, -614.7600,
+         -618.6900, -617.7800, -606.0500, -601.5700, -622.0200, -624.7300],
+        [-588.5800, -593.6100, -590.9600, -597.5800, -595.8000, -591.7600,
+         -595.6900, -594.7800, -583.0500, -578.5700, -599.0200, -601.7300],
+        [-608.0800, -613.1100, -610.4600, -617.0800, -615.3000, -611.2600,
+         -615.1900, -614.2800, -602.5500, -598.0700, -618.5200, -621.2300],
+        [-600.5800, -605.6100, -602.9600, -609.5800, -607.8000, -603.7600,
+         -607.6900, -606.7800, -595.0500, -590.5700, -611.0200, -613.7300],
+        [-605.0800, -610.1100, -607.4600, -614.0800, -612.3000, -608.2600,
+         -612.1900, -611.2800, -599.5500, -595.0700, -615.5200, -618.2300]],
+       device='cuda:0', grad_fn=<AliasBackward0>)
+Metadata
+	affine: tensor([[1., 0., 0., 0.],
+        [0., 1., 0., 0.],
+        [0., 0., 1., 0.],
+        [0., 0., 0., 1.]], dtype=torch.float64)
+Applied operations
+[]
+Is batch?: False
+tensor([[nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]],
+       device='cuda:0', grad_fn=<AliasBackward0>)
+Metadata
+	affine: tensor([[1., 0., 0., 0.],
+        [0., 1., 0., 0.],
+        [0., 0., 1., 0.],
+        [0., 0., 0., 1.]], dtype=torch.float64)
+Applied operations
+[]
+Is batch?: False
+tensor([[nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]],
+       device='cuda:0', grad_fn=<AliasBackward0>)
+Metadata
+	affine: tensor([[1., 0., 0., 0.],
+        [0., 1., 0., 0.],
+        [0., 0., 1., 0.],
+        [0., 0., 0., 1.]], dtype=torch.float64)
+Applied operations
+[]
+Is batch?: False
+tensor([[nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]],
+       device='cuda:0', grad_fn=<AliasBackward0>)
+Metadata
+	affine: tensor([[1., 0., 0., 0.],
+        [0., 1., 0., 0.],
+        [0., 0., 1., 0.],
+        [0., 0., 0., 1.]], dtype=torch.float64)
+Applied operations
+[]
+Is batch?: False
+tensor([[nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]],
+       device='cuda:0', grad_fn=<AliasBackward0>)
+Metadata
+	affine: tensor([[1., 0., 0., 0.],
+        [0., 1., 0., 0.],
+        [0., 0., 1., 0.],
+        [0., 0., 0., 1.]], dtype=torch.float64)
+Applied operations
+[]
+Is batch?: False
+tensor([[nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]],
+       device='cuda:0', grad_fn=<AliasBackward0>)
+Metadata
+	affine: tensor([[1., 0., 0., 0.],
+        [0., 1., 0., 0.],
+        [0., 0., 1., 0.],
+        [0., 0., 0., 1.]], dtype=torch.float64)
+Applied operations
+[]
+Is batch?: False
+tensor([[nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan],
+        [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]],
+       device='cuda:0', grad_fn=<AliasBackward0>)
+Metadata
+	affine: tensor([[1., 0., 0., 0.],
+        [0., 1., 0., 0.],
+        [0., 0., 1., 0.],
+        [0., 0., 0., 1.]], dtype=torch.float64)
+Applied operations
+[]
+Is batch?: False
+tensor([[nan, nan, nan, nan],
+        [nan, nan, nan, nan],
+        [nan, nan, nan, nan],
+        [nan, nan, nan, nan]], device='cuda:0', grad_fn=<AliasBackward0>)
+Metadata
+	affine: tensor([[1., 0., 0., 0.],
+        [0., 1., 0., 0.],
+        [0., 0., 1., 0.],
+        [0., 0., 0., 1.]], dtype=torch.float64)
+Applied operations
+[]
+Is batch?: False
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 9/9 [00:36<00:00,  4.03s/it]
+Traceback (most recent call last):
+  File "main_train_1.py", line 56, in <module>
+    trainer.train(epochs=config["epochs"])
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/trainer.py", line 81, in train
+    train_loss, train_delta = self.train_one_epoch()
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/trainer.py", line 56, in train_one_epoch
+    age_delta_mean = torch.mean(torch.stack(age_deltas))
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/monai/data/meta_tensor.py", line 245, in __torch_function__
+    ret = super().__torch_function__(func, types, args, kwargs)
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/_tensor.py", line 1051, in __torch_function__
+    ret = func(*args, **kwargs)
+RuntimeError: stack expects each tensor to be equal size, but got [12] at entry 0 and [4] at entry 96

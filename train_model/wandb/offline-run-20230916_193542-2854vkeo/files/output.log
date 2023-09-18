@@ -1,0 +1,34 @@
+Number of subjects: 40055
+Number of subjects after checking: 39373
+Number of subjects: 40055
+Number of subjects after checking: 39373
+selecting new mask
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+tensor([ 0.4016, -0.0652,  1.1818,  0.3143], dtype=torch.float64)
+Traceback (most recent call last):
+  File "main_train_1.py", line 51, in <module>
+    trainer.train(epochs=config["epochs"])
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/trainer.py", line 82, in train
+    train_loss, train_delta = self.train_one_epoch()
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/trainer.py", line 43, in train_one_epoch
+    self.scaler.scale(loss).backward()
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/_tensor.py", line 299, in backward
+    return handle_torch_function(
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/overrides.py", line 1355, in handle_torch_function
+    result = torch_func_method(public_api, types, args, kwargs)
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/monai/data/meta_tensor.py", line 245, in __torch_function__
+    ret = super().__torch_function__(func, types, args, kwargs)
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/_tensor.py", line 1051, in __torch_function__
+    ret = func(*args, **kwargs)
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/_tensor.py", line 307, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/autograd/__init__.py", line 154, in backward
+    Variable._execution_engine.run_backward(
+RuntimeError: Found dtype Double but expected Float

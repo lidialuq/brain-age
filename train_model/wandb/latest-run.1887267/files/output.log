@@ -1,0 +1,12 @@
+Number of subjects: 40055
+Number of subjects after checking: 0
+Number of subjects: 40055
+Number of subjects after checking: 0
+Traceback (most recent call last):
+  File "main_train_1.py", line 36, in <module>
+    train_loader = DataLoader(train_dataset, batch_size=config["batch_size"],
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 268, in __init__
+    sampler = RandomSampler(dataset, generator=generator)
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/utils/data/sampler.py", line 102, in __init__
+    raise ValueError("num_samples should be a positive integer "
+ValueError: num_samples should be a positive integer value, but got num_samples=0

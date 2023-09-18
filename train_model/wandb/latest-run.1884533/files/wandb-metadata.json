@@ -1,0 +1,24 @@
+{
+    "os": "Linux-6.4.7-arch1-3-x86_64-with-glibc2.10",
+    "python": "3.8.0",
+    "heartbeatAt": "2023-09-16T15:20:40.372080",
+    "startedAt": "2023-09-16T15:20:38.681218",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_count": 2,
+    "cpu_count": 64,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "main_train_1.py",
+    "codePath": "train_model/main_train_1.py",
+    "git": {
+        "remote": "git@github.com:lidialuq/brain-age.git",
+        "commit": "c314526cedb94002986c3a6fc2908982df42167f"
+    },
+    "email": "lidialuquef@gmail.com",
+    "root": "/mnt/CRAI-NAS/all/lidfer/brain-age",
+    "host": "ms2",
+    "username": "lidfer",
+    "executable": "/home/lidfer/miniconda3/envs/pytorch/bin/python"
+}

@@ -1,0 +1,27 @@
+
+/mnt/HDD18TB/lidfer/ukb_preprocessed/bids/4712967/ses-2/T1_unbiased_brain_uint8.nii.gz
+Traceback (most recent call last):
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/nibabel/loadsave.py", line 42, in load
+    stat_result = os.stat(filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/HDD18TB/lidfer/ukb_preprocessed/bids/4712967/ses-2/T1_unbiased_brain_uint8.nii.gz'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "main_train_1.py", line 51, in <module>
+    trainer.train(epochs=config["epochs"])
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/trainer.py", line 80, in train
+    train_loss, train_delta = self.train_one_epoch()
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/trainer.py", line 34, in train_one_epoch
+    for dic in self.train_loader:
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 561, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/dataset.py", line 63, in __getitem__
+    image = nib.load(img_path).get_fdata()
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/nibabel/loadsave.py", line 44, in load
+    raise FileNotFoundError(f"No such file or no access: '{filename}'")
+FileNotFoundError: No such file or no access: '/mnt/HDD18TB/lidfer/ukb_preprocessed/bids/4712967/ses-2/T1_unbiased_brain_uint8.nii.gz'

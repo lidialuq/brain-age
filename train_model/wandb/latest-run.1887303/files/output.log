@@ -1,0 +1,32 @@
+Number of subjects: 40055
+Number of subjects after checking: 35118
+Number of subjects: 40055
+Number of subjects after checking: 35118
+  0%|▎                                                                                                                      | 21/7024 [02:51<15:53:28,  8.17s/it]
+Traceback (most recent call last):
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/nibabel/loadsave.py", line 42, in load
+    stat_result = os.stat(filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/lidfer/data/ukb_preprocessed/ukb_preprocessed/bids/sub-5484434/ses-2/T1_unbiased_brain_uint8.nii.gz'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "main_train_1.py", line 51, in <module>
+    trainer.train(epochs=config["epochs"])
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/trainer.py", line 80, in train
+    train_loss, train_delta = self.train_one_epoch()
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/trainer.py", line 37, in train_one_epoch
+    for image, label in tqdm(self.train_loader):
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/tqdm/std.py", line 1180, in __iter__
+    for obj in iterable:
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 561, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/dataset.py", line 69, in __getitem__
+    image = nib.load(img_path).get_fdata()
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/nibabel/loadsave.py", line 44, in load
+    raise FileNotFoundError(f"No such file or no access: '{filename}'")
+FileNotFoundError: No such file or no access: '/home/lidfer/data/ukb_preprocessed/ukb_preprocessed/bids/sub-5484434/ses-2/T1_unbiased_brain_uint8.nii.gz'

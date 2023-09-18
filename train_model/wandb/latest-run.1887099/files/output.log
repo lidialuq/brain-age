@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "main_train_1.py", line 32, in <module>
+    train_dataset = UKB(data_path, masks_path, train=True, val_split=0.2,
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/dataset.py", line 19, in __init__
+    age_df = pd.read_csv(os.path.join(self.root, 'ukb_TP_02_eid_age_sex.csv'))
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 933, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1217, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/pandas/io/common.py", line 789, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '/home/lidfer/data/ukb_preprocessed/ukb_TP_02_eid_age_sex.csv'

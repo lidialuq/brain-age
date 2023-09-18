@@ -1,0 +1,13 @@
+2023-09-16 19:51:06,077 INFO    MainThread:1886652 [internal.py:wandb_internal():90] W&B internal server running at pid: 1886652, started at: 2023-09-16 19:51:06.075109
+2023-09-16 19:51:06,079 DEBUG   HandlerThread:1886652 [handler.py:handle_request():141] handle_request: run_start
+2023-09-16 19:51:06,079 INFO    WriterThread:1886652 [datastore.py:open_for_write():75] open: /mnt/CRAI-NAS/all/lidfer/brain-age/train_model/wandb/offline-run-20230916_195105-s4siw4b7/run-s4siw4b7.wandb
+2023-09-16 19:51:06,085 DEBUG   HandlerThread:1886652 [meta.py:__init__():35] meta init
+2023-09-16 19:51:06,086 DEBUG   HandlerThread:1886652 [meta.py:__init__():49] meta init done
+2023-09-16 19:51:06,086 DEBUG   HandlerThread:1886652 [meta.py:probe():209] probe
+2023-09-16 19:51:06,099 DEBUG   HandlerThread:1886652 [meta.py:_setup_git():199] setup git
+2023-09-16 19:51:06,139 DEBUG   HandlerThread:1886652 [meta.py:_setup_git():206] setup git done
+2023-09-16 19:51:06,139 DEBUG   HandlerThread:1886652 [meta.py:_save_pip():53] save pip
+2023-09-16 19:51:06,142 DEBUG   HandlerThread:1886652 [meta.py:_save_pip():67] save pip done
+2023-09-16 19:51:06,142 DEBUG   HandlerThread:1886652 [meta.py:_save_conda():74] save conda
+2023-09-16 19:51:07,256 DEBUG   HandlerThread:1886652 [meta.py:_save_conda():84] save conda done
+2023-09-16 19:51:07,256 DEBUG   HandlerThread:1886652 [meta.py:probe():247] probe done

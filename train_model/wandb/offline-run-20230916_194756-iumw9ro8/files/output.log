@@ -1,0 +1,725 @@
+Number of subjects: 40055
+Number of subjects after checking: 39373
+Number of subjects: 40055
+Number of subjects after checking: 39373
+selecting new mask
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+tensor([-0.0625,  0.6938, -0.2477, -0.2067], dtype=torch.float64)
+age_delta: tensor([[-4.0038, -9.7238, -2.6038, -2.9138],
+        [-3.8475, -9.5675, -2.4475, -2.7575],
+        [-4.1913, -9.9113, -2.7913, -3.1013],
+        [-4.2538, -9.9738, -2.8538, -3.1638]], device='cuda:0',
+       grad_fn=<AliasBackward0>)
+Metadata
+	affine: tensor([[-1.0000e+00,  0.0000e+00,  0.0000e+00,  2.5500e+02],
+        [ 0.0000e+00, -1.0000e+00,  1.2246e-16,  2.5500e+02],
+        [ 0.0000e+00, -1.2246e-16, -1.0000e+00,  2.5500e+02],
+        [ 0.0000e+00,  0.0000e+00,  0.0000e+00,  1.0000e+00]],
+       dtype=torch.float64)
+Applied operations
+[ {class: 'RandZoom', do_transforms: False, extra_info: {}, id: 140090273711824, orig_size: (256, 256, 256)},
+  {class: 'RandRotate', do_transforms: False, extra_info: {}, id: 140090273759872, orig_size: (256, 256, 256)},
+  {class: 'RandRotate90', do_transforms: False, extra_info: {}, id: 140090273759824, orig_size: (256, 256, 256)},
+  {class: 'RandRotate90', do_transforms: False, extra_info: {}, id: 140090273760016, orig_size: (256, 256, 256)},
+  { class: 'RandRotate90',
+    do_transforms: True,
+    extra_info: { class: 'Rotate90',
+                  extra_info: {'axes': [1, 2], 'k': 2},
+                  id: 140090088424880,
+                  orig_size: (256, 256, 256)},
+    id: 140090273760256,
+    orig_size: (256, 256, 256)},
+  { class: 'RandFlip',
+    do_transforms: True,
+    extra_info: {class: 'Flip', id: 140090273760208, orig_size: (256, 256, 256)},
+    id: 140090273760304,
+    orig_size: (256, 256, 256)},
+  {class: 'RandFlip', do_transforms: False, extra_info: {}, id: 140090120025712, orig_size: (256, 256, 256)},
+  {class: 'RandFlip', do_transforms: False, extra_info: {}, id: 140090119400416, orig_size: (256, 256, 256)}]
+Is batch?: False
+type(age_delta): <class 'monai.data.meta_tensor.MetaTensor'>
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+tensor([ 1.2545,  0.0446,  1.2624, -2.2153], dtype=torch.float64)
+age_delta: tensor([[inf, inf, inf, inf],
+        [inf, inf, inf, inf],
+        [inf, inf, inf, inf],
+        [inf, inf, inf, inf]], device='cuda:0', grad_fn=<AliasBackward0>)
+Metadata
+	affine: tensor([[ 6.1232e-17,  1.0000e+00,  0.0000e+00, -1.4211e-14],
+        [-1.0000e+00,  6.1232e-17,  0.0000e+00,  2.5500e+02],
+        [ 0.0000e+00,  0.0000e+00,  1.0000e+00,  0.0000e+00],
+        [ 0.0000e+00,  0.0000e+00,  0.0000e+00,  1.0000e+00]],
+       dtype=torch.float64)
+Applied operations
+[ {class: 'RandZoom', do_transforms: False, extra_info: {}, id: 140090273711824, orig_size: (256, 256, 256)},
+  {class: 'RandRotate', do_transforms: False, extra_info: {}, id: 140090273759872, orig_size: (256, 256, 256)},
+  { class: 'RandRotate90',
+    do_transforms: True,
+    extra_info: { class: 'Rotate90',
+                  extra_info: {'axes': [0, 1], 'k': 1},
+                  id: 140090088424688,
+                  orig_size: (256, 256, 256)},
+    id: 140090273759824,
+    orig_size: (256, 256, 256)},
+  {class: 'RandRotate90', do_transforms: False, extra_info: {}, id: 140090273760016, orig_size: (256, 256, 256)},
+  {class: 'RandRotate90', do_transforms: False, extra_info: {}, id: 140090273760256, orig_size: (256, 256, 256)},
+  {class: 'RandFlip', do_transforms: False, extra_info: {}, id: 140090273760304, orig_size: (256, 256, 256)},
+  {class: 'RandFlip', do_transforms: False, extra_info: {}, id: 140090120025712, orig_size: (256, 256, 256)},
+  {class: 'RandFlip', do_transforms: False, extra_info: {}, id: 140090119400416, orig_size: (256, 256, 256)}]
+Is batch?: False
+type(age_delta): <class 'monai.data.meta_tensor.MetaTensor'>
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+selecting new mask
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+tensor([-0.4526,  0.5246,  1.5864, -0.4725], dtype=torch.float64)
+age_delta: tensor([[nan, nan, nan, nan],
+        [nan, nan, nan, nan],
+        [nan, nan, nan, nan],
+        [nan, nan, nan, nan]], device='cuda:0', grad_fn=<AliasBackward0>)
+Metadata
+	affine: tensor([[-9.1429e-01,  0.0000e+00,  0.0000e+00,  2.4407e+02],
+        [ 0.0000e+00, -9.1429e-01, -1.1197e-16,  2.4407e+02],
+        [ 0.0000e+00, -1.1197e-16,  9.1429e-01,  1.0929e+01],
+        [ 0.0000e+00,  0.0000e+00,  0.0000e+00,  1.0000e+00]],
+       dtype=torch.float64)
+Applied operations
+[ { class: 'RandZoom',
+    do_transforms: True,
+    extra_info: { class: 'Zoom',
+                  extra_info: { 'align_corners': none,
+                                'do_padcrop': True,
+                                'mode': 'area',
+                                'padcrop': { class: 'ResizeWithPadOrCrop',
+                                             extra_info: { 'crop_info': { class: 'CenterSpatialCrop',
+                                                                          extra_info: { 'cropped': [ 12, 12, 12, 12, 12,
+                                                                                                     12]},
+                                                                          id: 140090087897168,
+                                                                          orig_size: (280, 280, 280)},
+                                                           'pad_info': { class: 'SpatialPad',
+                                                                         extra_info: { 'padded': [ (0, 0), (0, 0),
+                                                                                                   (0, 0), (0, 0)]},
+                                                                         id: 140090087898464,
+                                                                         orig_size: (256, 256, 256)}},
+                                             id: 140090087895680,
+                                             orig_size: (280, 280, 280)}},
+                  id: 140090087899040,
+                  orig_size: (256, 256, 256)},
+    id: 140090273711824,
+    orig_size: (256, 256, 256)},
+  {class: 'RandRotate', do_transforms: False, extra_info: {}, id: 140090273759872, orig_size: (256, 256, 256)},
+  {class: 'RandRotate90', do_transforms: False, extra_info: {}, id: 140090273759824, orig_size: (256, 256, 256)},
+  {class: 'RandRotate90', do_transforms: False, extra_info: {}, id: 140090273760016, orig_size: (256, 256, 256)},
+  { class: 'RandRotate90',
+    do_transforms: True,
+    extra_info: { class: 'Rotate90',
+                  extra_info: {'axes': [1, 2], 'k': 2},
+                  id: 140090087895152,
+                  orig_size: (256, 256, 256)},
+    id: 140090273760256,
+    orig_size: (256, 256, 256)},
+  { class: 'RandFlip',
+    do_transforms: True,
+    extra_info: {class: 'Flip', id: 140090273760208, orig_size: (256, 256, 256)},
+    id: 140090273760304,
+    orig_size: (256, 256, 256)},
+  {class: 'RandFlip', do_transforms: False, extra_info: {}, id: 140090120025712, orig_size: (256, 256, 256)},
+  { class: 'RandFlip',
+    do_transforms: True,
+    extra_info: {class: 'Flip', id: 140090119400272, orig_size: (256, 256, 256)},
+    id: 140090119400416,
+    orig_size: (256, 256, 256)}]
+Is batch?: False
+type(age_delta): <class 'monai.data.meta_tensor.MetaTensor'>
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+tensor([1.4833, 0.6700, 0.3818, 1.4158], dtype=torch.float64)
+age_delta: tensor([[nan, nan, nan, nan],
+        [nan, nan, nan, nan],
+        [nan, nan, nan, nan],
+        [nan, nan, nan, nan]], device='cuda:0', grad_fn=<AliasBackward0>)
+Metadata
+	affine: tensor([[ 1.2851e-01,  1.2944e-01,  9.8322e-01, -3.0750e+01],
+        [-6.4939e-02, -9.8822e-01,  1.3859e-01,  2.4411e+02],
+        [ 9.8958e-01, -8.1660e-02, -1.1859e-01,  2.6861e+01],
+        [ 0.0000e+00,  0.0000e+00,  0.0000e+00,  1.0000e+00]],
+       dtype=torch.float64)
+Applied operations
+[ {class: 'RandZoom', do_transforms: False, extra_info: {}, id: 140090273711824, orig_size: (256, 256, 256)},
+  { class: 'RandRotate',
+    do_transforms: True,
+    extra_info: { class: 'Rotate',
+                  extra_info: { 'align_corners': False,
+                                'dtype': 'float32',
+                                'mode': bilinear,
+                                'padding_mode': zeros,
+                                'rot_mat': array([[ 0.98322373, -0.12944264,  0.12851342,  2.2574494 ],
+       [ 0.13858818,  0.98821871, -0.06493912, -7.88814094],
+       [-0.11859348,  0.08166012,  0.98957931,  6.03764034],
+       [ 0.        ,  0.        ,  0.        ,  1.        ]])},
+                  id: 140090109103360,
+                  orig_size: (256, 256, 256)},
+    id: 140090273759872,
+    orig_size: (256, 256, 256)},
+  {class: 'RandRotate90', do_transforms: False, extra_info: {}, id: 140090273759824, orig_size: (256, 256, 256)},
+  { class: 'RandRotate90',
+    do_transforms: True,
+    extra_info: { class: 'Rotate90',
+                  extra_info: {'axes': [0, 2], 'k': 1},
+                  id: 140090273759728,
+                  orig_size: (256, 256, 256)},
+    id: 140090273760016,
+    orig_size: (256, 256, 256)},
+  { class: 'RandRotate90',
+    do_transforms: True,
+    extra_info: { class: 'Rotate90',
+                  extra_info: {'axes': [1, 2], 'k': 2},
+                  id: 140090109103360,
+                  orig_size: (256, 256, 256)},
+    id: 140090273760256,
+    orig_size: (256, 256, 256)},
+  { class: 'RandFlip',
+    do_transforms: True,
+    extra_info: {class: 'Flip', id: 140090273760208, orig_size: (256, 256, 256)},
+    id: 140090273760304,
+    orig_size: (256, 256, 256)},
+  {class: 'RandFlip', do_transforms: False, extra_info: {}, id: 140090120025712, orig_size: (256, 256, 256)},
+  { class: 'RandFlip',
+    do_transforms: True,
+    extra_info: {class: 'Flip', id: 140090119400272, orig_size: (256, 256, 256)},
+    id: 140090119400416,
+    orig_size: (256, 256, 256)}]
+Is batch?: False
+type(age_delta): <class 'monai.data.meta_tensor.MetaTensor'>
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+tensor([-1.7009,  0.4016,  0.5576, -0.6431], dtype=torch.float64)
+age_delta: tensor([[nan, nan, nan, nan],
+        [nan, nan, nan, nan],
+        [nan, nan, nan, nan],
+        [nan, nan, nan, nan]], device='cuda:0', grad_fn=<AliasBackward0>)
+Metadata
+	affine: tensor([[ 6.6704e-17, -1.0894e+00,  2.0011e-16,  2.6694e+02],
+        [ 0.0000e+00,  2.0011e-16,  1.0894e+00, -1.0849e+01],
+        [-1.0894e+00, -6.6704e-17,  1.2253e-32,  2.6694e+02],
+        [ 0.0000e+00,  0.0000e+00,  0.0000e+00,  1.0000e+00]],
+       dtype=torch.float64)
+Applied operations
+[ { class: 'RandZoom',
+    do_transforms: True,
+    extra_info: { class: 'Zoom',
+                  extra_info: { 'align_corners': none,
+                                'do_padcrop': True,
+                                'mode': 'area',
+                                'padcrop': { class: 'ResizeWithPadOrCrop',
+                                             extra_info: { 'crop_info': { class: 'CenterSpatialCrop',
+                                                                          extra_info: {'cropped': [0, 0, 0, 0, 0, 0]},
+                                                                          id: 140090088427424,
+                                                                          orig_size: (235, 235, 235)},
+                                                           'pad_info': { class: 'SpatialPad',
+                                                                         extra_info: { 'padded': [ (0, 0), (10, 11),
+                                                                                                   (10, 11),
+                                                                                                   (10, 11)]},
+                                                                         id: 140090140587200,
+                                                                         orig_size: (235, 235, 235)}},
+                                             id: 140090119478576,
+                                             orig_size: (235, 235, 235)}},
+                  id: 140090140587056,
+                  orig_size: (256, 256, 256)},
+    id: 140090273711824,
+    orig_size: (256, 256, 256)},
+  {class: 'RandRotate', do_transforms: False, extra_info: {}, id: 140090273759872, orig_size: (256, 256, 256)},
+  {class: 'RandRotate90', do_transforms: False, extra_info: {}, id: 140090273759824, orig_size: (256, 256, 256)},
+  { class: 'RandRotate90',
+    do_transforms: True,
+    extra_info: { class: 'Rotate90',
+                  extra_info: {'axes': [0, 2], 'k': 1},
+                  id: 140090140586864,
+                  orig_size: (256, 256, 256)},
+    id: 140090273760016,
+    orig_size: (256, 256, 256)},
+  { class: 'RandRotate90',
+    do_transforms: True,
+    extra_info: { class: 'Rotate90',
+                  extra_info: {'axes': [1, 2], 'k': 3},
+                  id: 140090140586672,
+                  orig_size: (256, 256, 256)},
+    id: 140090273760256,
+    orig_size: (256, 256, 256)},
+  {class: 'RandFlip', do_transforms: False, extra_info: {}, id: 140090273760304, orig_size: (256, 256, 256)},
+  { class: 'RandFlip',
+    do_transforms: True,
+    extra_info: {class: 'Flip', id: 140090120576208, orig_size: (256, 256, 256)},
+    id: 140090120025712,
+    orig_size: (256, 256, 256)},
+  { class: 'RandFlip',
+    do_transforms: True,
+    extra_info: {class: 'Flip', id: 140090119400272, orig_size: (256, 256, 256)},
+    id: 140090119400416,
+    orig_size: (256, 256, 256)}]
+Is batch?: False
+type(age_delta): <class 'monai.data.meta_tensor.MetaTensor'>
+selecting new mask
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+tensor([-1.8755,  0.6423, -1.1879,  0.3408], dtype=torch.float64)
+age_delta: tensor([[nan, nan, nan, nan],
+        [nan, nan, nan, nan],
+        [nan, nan, nan, nan],
+        [nan, nan, nan, nan]], device='cuda:0', grad_fn=<AliasBackward0>)
+Metadata
+	affine: tensor([[-6.1232e-17,  0.0000e+00,  1.0000e+00,  1.4034e-15],
+        [ 0.0000e+00, -1.0000e+00,  0.0000e+00,  2.5500e+02],
+        [ 1.0000e+00,  0.0000e+00,  6.1232e-17,  0.0000e+00],
+        [ 0.0000e+00,  0.0000e+00,  0.0000e+00,  1.0000e+00]],
+       dtype=torch.float64)
+Applied operations
+[ {class: 'RandZoom', do_transforms: False, extra_info: {}, id: 140090273711824, orig_size: (256, 256, 256)},
+  {class: 'RandRotate', do_transforms: False, extra_info: {}, id: 140090273759872, orig_size: (256, 256, 256)},
+  {class: 'RandRotate90', do_transforms: False, extra_info: {}, id: 140090273759824, orig_size: (256, 256, 256)},
+  { class: 'RandRotate90',
+    do_transforms: True,
+    extra_info: { class: 'Rotate90',
+                  extra_info: {'axes': [0, 2], 'k': 1},
+                  id: 140090087897552,
+                  orig_size: (256, 256, 256)},
+    id: 140090273760016,
+    orig_size: (256, 256, 256)},
+  {class: 'RandRotate90', do_transforms: False, extra_info: {}, id: 140090273760256, orig_size: (256, 256, 256)},
+  { class: 'RandFlip',
+    do_transforms: True,
+    extra_info: {class: 'Flip', id: 140090273760208, orig_size: (256, 256, 256)},
+    id: 140090273760304,
+    orig_size: (256, 256, 256)},
+  { class: 'RandFlip',
+    do_transforms: True,
+    extra_info: {class: 'Flip', id: 140090120576208, orig_size: (256, 256, 256)},
+    id: 140090120025712,
+    orig_size: (256, 256, 256)},
+  {class: 'RandFlip', do_transforms: False, extra_info: {}, id: 140090119400416, orig_size: (256, 256, 256)}]
+Is batch?: False
+type(age_delta): <class 'monai.data.meta_tensor.MetaTensor'>
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+tensor([ 1.0694, -1.9879, -0.9644, -0.9088], dtype=torch.float64)
+age_delta: tensor([[nan, nan, nan, nan],
+        [nan, nan, nan, nan],
+        [nan, nan, nan, nan],
+        [nan, nan, nan, nan]], device='cuda:0', grad_fn=<AliasBackward0>)
+Metadata
+	affine: tensor([[ 1.8895e-01,  9.8154e-01, -2.9597e-02, -1.7964e+01],
+        [-1.7020e-01,  6.2417e-02,  9.8343e-01,  1.5855e+01],
+        [-9.6713e-01,  1.8078e-01, -1.7885e-01,  2.5056e+02],
+        [ 0.0000e+00,  0.0000e+00,  0.0000e+00,  1.0000e+00]],
+       dtype=torch.float64)
+Applied operations
+[ {class: 'RandZoom', do_transforms: False, extra_info: {}, id: 140090273711824, orig_size: (256, 256, 256)},
+  { class: 'RandRotate',
+    do_transforms: True,
+    extra_info: { class: 'Rotate',
+                  extra_info: { 'align_corners': False,
+                                'dtype': 'float32',
+                                'mode': bilinear,
+                                'padding_mode': zeros,
+                                'rot_mat': array([[ 9.81541347e-01, -2.95971310e-02, -1.88946009e-01,
+         3.02177287e+01],
+       [ 6.24171317e-02,  9.83431085e-01,  1.70198127e-01,
+        -2.75459088e+01],
+       [ 1.80778003e-01, -1.78849966e-01,  9.67125640e-01,
+         3.94565628e+00],
+       [ 0.00000000e+00,  0.00000000e+00,  0.00000000e+00,
+         1.00000000e+00]])},
+                  id: 140090084399088,
+                  orig_size: (256, 256, 256)},
+    id: 140090273759872,
+    orig_size: (256, 256, 256)},
+  {class: 'RandRotate90', do_transforms: False, extra_info: {}, id: 140090273759824, orig_size: (256, 256, 256)},
+  { class: 'RandRotate90',
+    do_transforms: True,
+    extra_info: { class: 'Rotate90',
+                  extra_info: {'axes': [0, 2], 'k': 1},
+                  id: 140090084398464,
+                  orig_size: (256, 256, 256)},
+    id: 140090273760016,
+    orig_size: (256, 256, 256)},
+  { class: 'RandRotate90',
+    do_transforms: True,
+    extra_info: { class: 'Rotate90',
+                  extra_info: {'axes': [1, 2], 'k': 1},
+                  id: 140090084398464,
+                  orig_size: (256, 256, 256)},
+    id: 140090273760256,
+    orig_size: (256, 256, 256)},
+  {class: 'RandFlip', do_transforms: False, extra_info: {}, id: 140090273760304, orig_size: (256, 256, 256)},
+  { class: 'RandFlip',
+    do_transforms: True,
+    extra_info: {class: 'Flip', id: 140090120576208, orig_size: (256, 256, 256)},
+    id: 140090120025712,
+    orig_size: (256, 256, 256)},
+  {class: 'RandFlip', do_transforms: False, extra_info: {}, id: 140090119400416, orig_size: (256, 256, 256)}]
+Is batch?: False
+type(age_delta): <class 'monai.data.meta_tensor.MetaTensor'>
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+selecting new mask
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+tensor([-1.9839, -0.4209, -1.9416,  0.9768], dtype=torch.float64)
+age_delta: tensor([[nan, nan, nan, nan],
+        [nan, nan, nan, nan],
+        [nan, nan, nan, nan],
+        [nan, nan, nan, nan]], device='cuda:0', grad_fn=<AliasBackward0>)
+Metadata
+	affine: tensor([[ 1.8370e-16,  0.0000e+00, -1.0000e+00,  2.5500e+02],
+        [ 0.0000e+00, -1.0000e+00,  0.0000e+00,  2.5500e+02],
+        [-1.0000e+00,  0.0000e+00, -1.8370e-16,  2.5500e+02],
+        [ 0.0000e+00,  0.0000e+00,  0.0000e+00,  1.0000e+00]],
+       dtype=torch.float64)
+Applied operations
+[ {class: 'RandZoom', do_transforms: False, extra_info: {}, id: 140090273711824, orig_size: (256, 256, 256)},
+  {class: 'RandRotate', do_transforms: False, extra_info: {}, id: 140090273759872, orig_size: (256, 256, 256)},
+  {class: 'RandRotate90', do_transforms: False, extra_info: {}, id: 140090273759824, orig_size: (256, 256, 256)},
+  { class: 'RandRotate90',
+    do_transforms: True,
+    extra_info: { class: 'Rotate90',
+                  extra_info: {'axes': [0, 2], 'k': 3},
+                  id: 140090083913984,
+                  orig_size: (256, 256, 256)},
+    id: 140090273760016,
+    orig_size: (256, 256, 256)},
+  {class: 'RandRotate90', do_transforms: False, extra_info: {}, id: 140090273760256, orig_size: (256, 256, 256)},
+  { class: 'RandFlip',
+    do_transforms: True,
+    extra_info: {class: 'Flip', id: 140090273760208, orig_size: (256, 256, 256)},
+    id: 140090273760304,
+    orig_size: (256, 256, 256)},
+  { class: 'RandFlip',
+    do_transforms: True,
+    extra_info: {class: 'Flip', id: 140090120576208, orig_size: (256, 256, 256)},
+    id: 140090120025712,
+    orig_size: (256, 256, 256)},
+  {class: 'RandFlip', do_transforms: False, extra_info: {}, id: 140090119400416, orig_size: (256, 256, 256)}]
+Is batch?: False
+type(age_delta): <class 'monai.data.meta_tensor.MetaTensor'>
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+tensor([ 0.8882, -1.2381,  1.0099,  0.8935], dtype=torch.float64)
+age_delta: tensor([[nan, nan, nan, nan],
+        [nan, nan, nan, nan],
+        [nan, nan, nan, nan],
+        [nan, nan, nan, nan]], device='cuda:0', grad_fn=<AliasBackward0>)
+Metadata
+	affine: tensor([[ 1.0000e+00, -1.2246e-16, -7.4988e-33,  1.9122e-30],
+        [ 0.0000e+00,  6.1232e-17, -1.0000e+00,  2.5500e+02],
+        [ 1.2246e-16,  1.0000e+00,  6.1232e-17, -1.8421e-14],
+        [ 0.0000e+00,  0.0000e+00,  0.0000e+00,  1.0000e+00]],
+       dtype=torch.float64)
+Applied operations
+[ {class: 'RandZoom', do_transforms: False, extra_info: {}, id: 140090273711824, orig_size: (256, 256, 256)},
+  {class: 'RandRotate', do_transforms: False, extra_info: {}, id: 140090273759872, orig_size: (256, 256, 256)},
+  {class: 'RandRotate90', do_transforms: False, extra_info: {}, id: 140090273759824, orig_size: (256, 256, 256)},
+  { class: 'RandRotate90',
+    do_transforms: True,
+    extra_info: { class: 'Rotate90',
+                  extra_info: {'axes': [0, 2], 'k': 2},
+                  id: 140090083914608,
+                  orig_size: (256, 256, 256)},
+    id: 140090273760016,
+    orig_size: (256, 256, 256)},
+  { class: 'RandRotate90',
+    do_transforms: True,
+    extra_info: { class: 'Rotate90',
+                  extra_info: {'axes': [1, 2], 'k': 1},
+                  id: 140090083914608,
+                  orig_size: (256, 256, 256)},
+    id: 140090273760256,
+    orig_size: (256, 256, 256)},
+  { class: 'RandFlip',
+    do_transforms: True,
+    extra_info: {class: 'Flip', id: 140090273760208, orig_size: (256, 256, 256)},
+    id: 140090273760304,
+    orig_size: (256, 256, 256)},
+  {class: 'RandFlip', do_transforms: False, extra_info: {}, id: 140090120025712, orig_size: (256, 256, 256)},
+  { class: 'RandFlip',
+    do_transforms: True,
+    extra_info: {class: 'Flip', id: 140090119400272, orig_size: (256, 256, 256)},
+    id: 140090119400416,
+    orig_size: (256, 256, 256)}]
+Is batch?: False
+type(age_delta): <class 'monai.data.meta_tensor.MetaTensor'>
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+tensor([ 1.0535, -0.6378,  0.1543, -0.3098], dtype=torch.float64)
+age_delta: tensor([[nan, nan, nan, nan],
+        [nan, nan, nan, nan],
+        [nan, nan, nan, nan],
+        [nan, nan, nan, nan]], device='cuda:0', grad_fn=<AliasBackward0>)
+Metadata
+	affine: tensor([[-1.1248e-32, -1.0000e+00,  6.1232e-17,  2.5500e+02],
+        [ 1.8370e-16, -6.1232e-17, -1.0000e+00,  2.5500e+02],
+        [ 1.0000e+00,  0.0000e+00,  1.8370e-16, -4.2102e-15],
+        [ 0.0000e+00,  0.0000e+00,  0.0000e+00,  1.0000e+00]],
+       dtype=torch.float64)
+Applied operations
+[ {class: 'RandZoom', do_transforms: False, extra_info: {}, id: 140090273711824, orig_size: (256, 256, 256)},
+  {class: 'RandRotate', do_transforms: False, extra_info: {}, id: 140090273759872, orig_size: (256, 256, 256)},
+  { class: 'RandRotate90',
+    do_transforms: True,
+    extra_info: { class: 'Rotate90',
+                  extra_info: {'axes': [0, 1], 'k': 1},
+                  id: 140090083224736,
+                  orig_size: (256, 256, 256)},
+    id: 140090273759824,
+    orig_size: (256, 256, 256)},
+  { class: 'RandRotate90',
+    do_transforms: True,
+    extra_info: { class: 'Rotate90',
+                  extra_info: {'axes': [0, 2], 'k': 3},
+                  id: 140090083224736,
+                  orig_size: (256, 256, 256)},
+    id: 140090273760016,
+    orig_size: (256, 256, 256)},
+  {class: 'RandRotate90', do_transforms: False, extra_info: {}, id: 140090273760256, orig_size: (256, 256, 256)},
+  {class: 'RandFlip', do_transforms: False, extra_info: {}, id: 140090273760304, orig_size: (256, 256, 256)},
+  { class: 'RandFlip',
+    do_transforms: True,
+    extra_info: {class: 'Flip', id: 140090120576208, orig_size: (256, 256, 256)},
+    id: 140090120025712,
+    orig_size: (256, 256, 256)},
+  { class: 'RandFlip',
+    do_transforms: True,
+    extra_info: {class: 'Flip', id: 140090119400272, orig_size: (256, 256, 256)},
+    id: 140090119400416,
+    orig_size: (256, 256, 256)}]
+Is batch?: False
+type(age_delta): <class 'monai.data.meta_tensor.MetaTensor'>
+selecting new mask
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+tensor([-0.8917, -1.8332,  1.1778, -1.2791], dtype=torch.float64)
+age_delta: tensor([[nan, nan, nan, nan],
+        [nan, nan, nan, nan],
+        [nan, nan, nan, nan],
+        [nan, nan, nan, nan]], device='cuda:0', grad_fn=<AliasBackward0>)
+Metadata
+	affine: tensor([[-1.8370e-16, -6.1232e-17,  1.0000e+00,  5.6843e-14],
+        [ 1.0000e+00, -1.1248e-32,  1.8370e-16, -4.2102e-15],
+        [ 0.0000e+00, -1.0000e+00, -6.1232e-17,  2.5500e+02],
+        [ 0.0000e+00,  0.0000e+00,  0.0000e+00,  1.0000e+00]],
+       dtype=torch.float64)
+Applied operations
+[ {class: 'RandZoom', do_transforms: False, extra_info: {}, id: 140090273711824, orig_size: (256, 256, 256)},
+  {class: 'RandRotate', do_transforms: False, extra_info: {}, id: 140090273759872, orig_size: (256, 256, 256)},
+  { class: 'RandRotate90',
+    do_transforms: True,
+    extra_info: { class: 'Rotate90',
+                  extra_info: {'axes': [0, 1], 'k': 3},
+                  id: 140090083224928,
+                  orig_size: (256, 256, 256)},
+    id: 140090273759824,
+    orig_size: (256, 256, 256)},
+  {class: 'RandRotate90', do_transforms: False, extra_info: {}, id: 140090273760016, orig_size: (256, 256, 256)},
+  { class: 'RandRotate90',
+    do_transforms: True,
+    extra_info: { class: 'Rotate90',
+                  extra_info: {'axes': [1, 2], 'k': 1},
+                  id: 140090083225120,
+                  orig_size: (256, 256, 256)},
+    id: 140090273760256,
+    orig_size: (256, 256, 256)},
+  {class: 'RandFlip', do_transforms: False, extra_info: {}, id: 140090273760304, orig_size: (256, 256, 256)},
+  {class: 'RandFlip', do_transforms: False, extra_info: {}, id: 140090120025712, orig_size: (256, 256, 256)},
+  { class: 'RandFlip',
+    do_transforms: True,
+    extra_info: {class: 'Flip', id: 140090119400272, orig_size: (256, 256, 256)},
+    id: 140090119400416,
+    orig_size: (256, 256, 256)}]
+Is batch?: False
+type(age_delta): <class 'monai.data.meta_tensor.MetaTensor'>
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+tensor([ 0.8419,  0.9953,  0.7454, -0.9538], dtype=torch.float64)
+age_delta: tensor([[nan, nan, nan, nan],
+        [nan, nan, nan, nan],
+        [nan, nan, nan, nan],
+        [nan, nan, nan, nan]], device='cuda:0', grad_fn=<AliasBackward0>)
+Metadata
+	affine: tensor([[ 1.8370e-16, -1.0000e+00,  0.0000e+00,  2.5500e+02],
+        [-1.0000e+00, -1.8370e-16,  0.0000e+00,  2.5500e+02],
+        [ 0.0000e+00,  0.0000e+00, -1.0000e+00,  2.5500e+02],
+        [ 0.0000e+00,  0.0000e+00,  0.0000e+00,  1.0000e+00]],
+       dtype=torch.float64)
+Applied operations
+[ {class: 'RandZoom', do_transforms: False, extra_info: {}, id: 140090273711824, orig_size: (256, 256, 256)},
+  {class: 'RandRotate', do_transforms: False, extra_info: {}, id: 140090273759872, orig_size: (256, 256, 256)},
+  { class: 'RandRotate90',
+    do_transforms: True,
+    extra_info: { class: 'Rotate90',
+                  extra_info: {'axes': [0, 1], 'k': 3},
+                  id: 140089659146192,
+                  orig_size: (256, 256, 256)},
+    id: 140090273759824,
+    orig_size: (256, 256, 256)},
+  {class: 'RandRotate90', do_transforms: False, extra_info: {}, id: 140090273760016, orig_size: (256, 256, 256)},
+  {class: 'RandRotate90', do_transforms: False, extra_info: {}, id: 140090273760256, orig_size: (256, 256, 256)},
+  { class: 'RandFlip',
+    do_transforms: True,
+    extra_info: {class: 'Flip', id: 140090273760208, orig_size: (256, 256, 256)},
+    id: 140090273760304,
+    orig_size: (256, 256, 256)},
+  {class: 'RandFlip', do_transforms: False, extra_info: {}, id: 140090120025712, orig_size: (256, 256, 256)},
+  { class: 'RandFlip',
+    do_transforms: True,
+    extra_info: {class: 'Flip', id: 140090119400272, orig_size: (256, 256, 256)},
+    id: 140090119400416,
+    orig_size: (256, 256, 256)}]
+Is batch?: False
+type(age_delta): <class 'monai.data.meta_tensor.MetaTensor'>
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+selecting new mask
+image shape: (1, 256, 256, 256)
+next image
+image shape: (1, 256, 256, 256)
+next image
+tensor([-1.7538,  1.4515, -1.3095, -0.3244], dtype=torch.float64)
+age_delta: tensor([[nan, nan, nan, nan],
+        [nan, nan, nan, nan],
+        [nan, nan, nan, nan],
+        [nan, nan, nan, nan]], device='cuda:0', grad_fn=<AliasBackward0>)
+Metadata
+	affine: tensor([[-5.9153e-17,  1.1831e-16,  9.6604e-01,  3.8472e+00],
+        [ 0.0000e+00,  9.6604e-01, -1.1831e-16,  3.8472e+00],
+        [ 9.6604e-01,  7.2441e-33,  5.9153e-17,  3.8472e+00],
+        [ 0.0000e+00,  0.0000e+00,  0.0000e+00,  1.0000e+00]],
+       dtype=torch.float64)
+Applied operations
+[ { class: 'RandZoom',
+    do_transforms: True,
+    extra_info: { class: 'Zoom',
+                  extra_info: { 'align_corners': none,
+                                'do_padcrop': True,
+                                'mode': 'area',
+                                'padcrop': { class: 'ResizeWithPadOrCrop',
+                                             extra_info: { 'crop_info': { class: 'CenterSpatialCrop',
+                                                                          extra_info: {'cropped': [4, 5, 4, 5, 4, 5]},
+                                                                          id: 140089658630736,
+                                                                          orig_size: (265, 265, 265)},
+                                                           'pad_info': { class: 'SpatialPad',
+                                                                         extra_info: { 'padded': [ (0, 0), (0, 0),
+                                                                                                   (0, 0), (0, 0)]},
+                                                                         id: 140089658632368,
+                                                                         orig_size: (256, 256, 256)}},
+                                             id: 140089658630304,
+                                             orig_size: (265, 265, 265)}},
+                  id: 140089659142208,
+                  orig_size: (256, 256, 256)},
+    id: 140090273711824,
+    orig_size: (256, 256, 256)},
+  {class: 'RandRotate', do_transforms: False, extra_info: {}, id: 140090273759872, orig_size: (256, 256, 256)},
+  {class: 'RandRotate90', do_transforms: False, extra_info: {}, id: 140090273759824, orig_size: (256, 256, 256)},
+  { class: 'RandRotate90',
+    do_transforms: True,
+    extra_info: { class: 'Rotate90',
+                  extra_info: {'axes': [0, 2], 'k': 1},
+                  id: 140089658632368,
+                  orig_size: (256, 256, 256)},
+    id: 140090273760016,
+    orig_size: (256, 256, 256)},
+  { class: 'RandRotate90',
+    do_transforms: True,
+    extra_info: { class: 'Rotate90',
+                  extra_info: {'axes': [1, 2], 'k': 2},
+                  id: 140089659142208,
+                  orig_size: (256, 256, 256)},
+    id: 140090273760256,
+    orig_size: (256, 256, 256)},
+  { class: 'RandFlip',
+    do_transforms: True,
+    extra_info: {class: 'Flip', id: 140090273760208, orig_size: (256, 256, 256)},
+    id: 140090273760304,
+    orig_size: (256, 256, 256)},
+  { class: 'RandFlip',
+    do_transforms: True,
+    extra_info: {class: 'Flip', id: 140090120576208, orig_size: (256, 256, 256)},
+    id: 140090120025712,
+    orig_size: (256, 256, 256)},
+  { class: 'RandFlip',
+    do_transforms: True,
+    extra_info: {class: 'Flip', id: 140090119400272, orig_size: (256, 256, 256)},
+    id: 140090119400416,
+    orig_size: (256, 256, 256)}]
+Is batch?: False

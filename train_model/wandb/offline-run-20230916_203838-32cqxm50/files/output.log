@@ -1,0 +1,17 @@
+Number of subjects: 40055
+Number of subjects after checking: 39373
+Number of subjects: 40055
+Number of subjects after checking: 39373
+  1%|█▌                                                                                                                     | 103/7875 [03:45<4:43:31,  2.19s/it]
+Traceback (most recent call last):
+  File "main_train_1.py", line 51, in <module>
+    trainer.train(epochs=config["epochs"])
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/trainer.py", line 80, in train
+    train_loss, train_delta = self.train_one_epoch()
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/trainer.py", line 46, in train_one_epoch
+    total_loss += loss.item()
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/monai/data/meta_tensor.py", line 245, in __torch_function__
+    ret = super().__torch_function__(func, types, args, kwargs)
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/_tensor.py", line 1051, in __torch_function__
+    ret = func(*args, **kwargs)
+KeyboardInterrupt

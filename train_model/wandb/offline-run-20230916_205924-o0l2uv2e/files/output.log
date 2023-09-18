@@ -1,0 +1,35 @@
+Number of subjects: 40055
+Number of subjects after checking: 39373
+Number of subjects: 40055
+Number of subjects after checking: 39373
+  0%|                                                                                                                                   | 0/2625 [01:17<?, ?it/s]
+Traceback (most recent call last):
+  File "main_train_1.py", line 51, in <module>
+    trainer.train(epochs=config["epochs"])
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/trainer.py", line 80, in train
+    train_loss, train_delta = self.train_one_epoch()
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/trainer.py", line 41, in train_one_epoch
+    outputs = self.model(inputs)
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/model.py", line 90, in forward
+    x = block(x)
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/CRAI-NAS/all/lidfer/brain-age/train_model/model.py", line 38, in forward
+    x = self.bn(x)
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/nn/modules/batchnorm.py", line 168, in forward
+    return F.batch_norm(
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/nn/functional.py", line 2267, in batch_norm
+    return handle_torch_function(
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/overrides.py", line 1355, in handle_torch_function
+    result = torch_func_method(public_api, types, args, kwargs)
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/monai/data/meta_tensor.py", line 245, in __torch_function__
+    ret = super().__torch_function__(func, types, args, kwargs)
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/_tensor.py", line 1051, in __torch_function__
+    ret = func(*args, **kwargs)
+  File "/home/lidfer/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/nn/functional.py", line 2282, in batch_norm
+    return torch.batch_norm(
+RuntimeError: CUDA out of memory. Tried to allocate 12.00 GiB (GPU 0; 23.69 GiB total capacity; 13.14 GiB already allocated; 8.46 GiB free; 13.15 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
